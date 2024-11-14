@@ -1,11 +1,10 @@
-const {
+import { Router } from "express";
+import {
   addTask,
   getTask,
   updateTask,
   deleteTask,
-} = require("../controllers/tasks.controller");
-
-const { Router } = require("express");
+} from "../controllers/tasks.controller";
 
 const tasksRouter = Router();
 
@@ -17,4 +16,4 @@ tasksRouter.put("/:id", updateTask);
 
 tasksRouter.delete("/:id", deleteTask);
 
-module.exports = tasksRouter;
+export default tasksRouter;

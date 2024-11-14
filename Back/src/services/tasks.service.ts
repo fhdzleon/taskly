@@ -1,4 +1,4 @@
-const addTaskService = async () => {
+export const addTaskService = async () => {
   try {
     return "Task added";
   } catch (error) {
@@ -6,7 +6,7 @@ const addTaskService = async () => {
   }
 };
 
-const getTasksService = async () => {
+export const getTasksService = async () => {
   try {
     return "Get task list";
   } catch (error) {
@@ -14,7 +14,7 @@ const getTasksService = async () => {
   }
 };
 
-const updateTaskService = async () => {
+export const updateTaskService = async () => {
   try {
     return "task updated";
   } catch (error) {
@@ -22,17 +22,10 @@ const updateTaskService = async () => {
   }
 };
 
-const deleteTaskService = async () => {
+export const deleteTaskService = async () => {
   try {
     return "task deleted";
   } catch (error) {
     throw new Error("Failed to delete task");
   }
-};
-
-module.exports = {
-  addTaskService,
-  getTasksService,
-  updateTaskService,
-  deleteTaskService,
 };

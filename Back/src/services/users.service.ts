@@ -1,4 +1,4 @@
-const serviceLogin = async () => {
+export const serviceLogin = async () => {
   try {
     return "User loged";
   } catch (error) {
@@ -6,15 +6,10 @@ const serviceLogin = async () => {
   }
 };
 
-const serviceRegister = async () => {
+export const serviceRegister = async () => {
   try {
-    return "user Register";
+    return "user Register now";
   } catch (error) {
     throw new Error("Failed for register");
   }
-};
-
-module.exports = {
-  serviceLogin,
-  serviceRegister,
 };
